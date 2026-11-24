@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم لا كوزين - La Cuisine</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="[suspicious link removed]">
+    <style>
+        body {
+            padding-top: 70px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                مطعم لا كوزين
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">قائمة الطعام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">قصتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">تواصل معنا</a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning ms-lg-3" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                    احجز طاولتك
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="ستيك مشوي">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">أشهى الأطباق العالمية والمحلية</h2>
+                        <p>تجربة طعام فريدة من نوعها تُعد بحب وشغف على أيدي أشهر الطهاة.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="بيتزا طازجة">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">بيتزا مارغريتا طازجة</h2>
+                        <p>عجينة هشة ومكونات طازجة 100% تُخبز في أفران حجرية تقليدية.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="حلويات فاخرة">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">حلويات ومشروبات مميزة</h2>
+                        <p>اختتم وجبتك بلمسة ساحرة من الحلويات الغربية والشرقية الراقية.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+            </button>
+        </div>
+    </section>
+
+    
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">قائمة الطعام (Menu)</h2>
+                <p class="text-muted">اختر طبقك المفضل من بين مجموعة متنوعة من الأطباق المحضرة طازجة</p>
+            </div>
+            <div class="row g-4">
+                <!-- طبق 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="سلطة طازجة">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">سلطة الخضار الطازجة</h5>
+                            <p class="card-text text-muted flex-grow-1">مزيج من الخضار الموسمية الطازجة مع زيت الزيتون الصافي وصلصة الليمون.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">25 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- طبق 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="بيتزا مارغريتا">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">بيتزا مارغريتا الإيطالية</h5>
+                            <p class="card-text text-muted flex-grow-1">جبنة الموزاريلا الفاخرة مع صلصة الطماطم الإيطالية والريحان الطازج.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">45 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- طبق 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="ستيك ريب آي">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">ستيك ريب آي مشوي</h5>
+                            <p class="card-text text-muted flex-grow-1">قطعة من لحم البقر الفاخر المشوي على الفحم مع الأعشاب وخضار السوتيه.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">90 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- طبق 4 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="معكرونة بالكمأة">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">معكرونة بالكمأة (Truffle Pasta)</h5>
+                            <p class="card-text text-muted flex-grow-1">معكرونة فريش بصلصة الكريمة الغنية وزيت الكمأة ورشة بارميزان.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">60 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- طبق 5 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="سلمون محمر">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">سلمون محمر بالليمون</h5>
+                            <p class="card-text text-muted flex-grow-1">شريحة سلمون نرويجية محمرة مع صلصة الزبدة والليمون والبطاطس المهروسة.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">75 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- طبق 6 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="كيكة الشوكولاتة">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">مولتن كيك الشوكولاتة</h5>
+                            <p class="card-text text-muted flex-grow-1">كيكة شوكولاتة هشة محشوة بالشوكولاتة الساخنة الذائبة مع آيس كريم فانيليا.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-warning fs-5">30 ₪</span>
+                                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">طلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="عن المطعم">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">قصتنا في مطعم لا كوزين</h2>
+                    <p class="text-muted leading-relaxed">
+                        تأسس "مطعم لا كوزين" عام 2015 بطلاعة رؤية تهدف إلى تقديم تجربة طعام استثنائية تجمع بين أصالة المذاق والابتكار العصري. 
+                    </p>
+                    <p class="text-muted leading-relaxed">
+                        نحرص دائماً على اختيار أجود المكونات الطازجة يومياً واقتناء المكونات المحلية والعالمية بعناية فائقة، لضمان تقديم أطباق تعكس التزامنا بالتميّز والجودة.
+                    </p>
+                    <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal">احجز طاولتك الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="bookingModalLabel">نموذج حجز طاولة</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="أدخل اسمك الكريم" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الهاتف</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="059xxxxxxx" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guestsCount" class="form-label">عدد الأشخاص</label>
+                            <select class="form-select" id="guestsCount" required>
+                                <option selected disabled value="">اختر عدد الضيوف...</option>
+                                <option value="1">شخص واحد</option>
+                                <option value="2">شخصان</option>
+                                <option value="4">4 أشخاص</option>
+                                <option value="6">6 أشخاص أو أكثر</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingDate" class="form-label">تاريخ الحجز</label>
+                            <input type="date" class="form-control" id="bookingDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingTime" class="form-label">وقت الحجز</label>
+                            <input type="time" class="form-control" id="bookingTime" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    <button type="button" class="btn btn-warning" onclick="alert('تم إرسال طلب الحجز بنجاح!')" data-bs-dismiss="modal">تأكيد الحجز</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer id="footer" class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- العمود 1: الموقع -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-warning">موقعنا</h5>
+                    <p><i class="fa-solid fa-location-dot me-2"></i>مدينة غزة، فلسطين</p>
+                    <p><i class="fa-solid fa-phone me-2"></i>+970 567153095</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i>info@lacuisine.ps</p>
+                </div>
+                <!-- العمود 2: ساعات العمل -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-warning">ساعات العمل</h5>
+                    <p><i class="fa-solid fa-clock me-2"></i>السبت - الخميس: 12:00 ظهراً - 11:00 مساءً</p>
+                    <p><i class="fa-solid fa-clock me-2"></i>الجمعة: 2:00 ظهراً - 11:30 مساءً</p>
+                </div>
+                <!-- العمود 3: شبكات التواصل الاجتماعي -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-warning">تابعنا على التواصل الاجتماعي</h5>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted fs-6">
+                &copy; 2026 مطعم لا كوزين - جميع الحقوق محفوظة. تم التطوير باستخدام Bootstrap 5.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
